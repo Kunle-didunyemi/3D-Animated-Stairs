@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(#eac4ff, #9e57c5);
+  overflow: hidden;
+}
+.stairs {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg) rotateY(160deg);
+}
+.stairs .base {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 300px;
+  background: #000;
+  transform: rotateX(90deg) translateZ(-150px);
+}
